@@ -1,3 +1,5 @@
+package co.edu.unisabana.arquitectura.proyectoprueba;
+
 public abstract class Usuario {
     abstract public String getLogin();
     abstract public String getPassword();

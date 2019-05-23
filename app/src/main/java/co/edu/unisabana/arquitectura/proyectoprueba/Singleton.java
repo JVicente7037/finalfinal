@@ -1,3 +1,5 @@
+package co.edu.unisabana.arquitectura.proyectoprueba;
+
 import java.util.ArrayList;
 
 public class Singleton {
