@@ -1,23 +1,20 @@
-package co.edu.unisabana.arquitectura.proyectoprueba;
-
-public class Conductor extends Usuario
+package Adapter;
+public class Pasajero extends Usuario
 {
-
     String login;
     String password;
     String tipo;
 
-    public Conductor()
+
+    public Pasajero()
     {
         super();
-
     }
 
-    public Conductor(String login, String password) {
+    public Pasajero(String login, String password) {
         this.login = login;
         this.password = password;
     }
-
 
     @Override
     public String getLogin()
@@ -46,7 +43,9 @@ public class Conductor extends Usuario
     @Override
     public String getTipoUsuario()
     {
+
         return tipo;
+
     }
 
     @Override
@@ -64,4 +63,5 @@ public class Conductor extends Usuario
         this.tipo=tip;
 
     }
+
 }
