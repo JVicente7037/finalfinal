@@ -1,4 +1,4 @@
-package co.edu.unisabana.arquitectura.proyectoprueba;
+package Adapter;
 
 public abstract class Usuario {
     abstract public String getLogin();
