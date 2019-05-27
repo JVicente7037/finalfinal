@@ -3,12 +3,20 @@ package FacadeSinglenton;
 import java.util.ArrayList;
 
 import Adapter.Usuario;
+import Composite.ReunionGrupos;
+import Composite.Transporte;
 
 public class Facade {
     private static Facade instanciaUnica;
     PagoGrupo P1 = new PagoGrupo();
     ReservaGrupo R1 = new ReservaGrupo();
-
+    String nombre;
+    String nom;
+    String tipo;
+    ReunionGrupos compositeReunion = new ReunionGrupos(nombre);
+    Transporte hojaTransporte = new Transporte(nom,tipo);
+    ArrayList<PagoGrupo> pagogrupo = new ArrayList<PagoGrupo>();
+    ArrayList<ReservaGrupo> reservagrupo = new ArrayList<ReservaGrupo>();
     ArrayList<Usuario> reservas = new ArrayList<Usuario>();
     Usuario u;
     public static Facade getInstance() {
@@ -88,4 +96,6 @@ public class Facade {
     public String LeerTodoPago(){
         return P1.LeerTodoPago();
     }
+
+
 }
