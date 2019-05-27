@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/image" />
 
     <EditText
-        android:id="@+id/editTextid"
+        android:id="@+id/id"
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewpago" />
 
     <EditText
-        android:id="@+id/editTextna"
+        android:id="@+id/nombre"
         android:layout_width="331dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -65,7 +65,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextid" />
+        app:layout_constraintTop_toBottomOf="@+id/id" />
 
 
     <EditText
@@ -143,6 +143,6 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextna" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre" />
 
 </android.support.constraint.ConstraintLayout>
