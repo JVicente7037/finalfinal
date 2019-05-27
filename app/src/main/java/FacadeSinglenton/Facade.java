@@ -6,11 +6,16 @@ import Adapter.Usuario;
 import Composite.Component;
 import Composite.ReunionGrupos;
 import Composite.Transporte;
+import Decorator.DecPlaca;
+import Decorator.DecPuestos;
 
 public class Facade {
     private static Facade instanciaUnica;
     PagoGrupo P1 = new PagoGrupo();
     ReservaGrupo R1 = new ReservaGrupo();
+    private Component componente;
+    DecPlaca DPlaca = new DecPlaca(componente);
+    DecPuestos DPuestos = new DecPuestos(componente);
     String nombre;
     String nom;
     String tipo;
@@ -117,6 +122,23 @@ public class Facade {
     public void modificarTransporte(String busca,String nuevo){
         hojaTransporte.modificar(busca, nuevo);
     }
-
+    public String showDPacla(){
+        return DPlaca.showMedioTransporte();
+    }
+    public void DPlacaModificar(String buscador, String nuevo){
+        DPlaca.modificar(buscador, nuevo);
+    }
+    public String consultaDPlaca(String nombrePlaca){
+        return DPlaca.consulta(nombrePlaca);
+    }
+    public String showDPuesto(){
+        return DPuestos.showMedioTransporte();
+    }
+    public void DPuestoModificar(String buscador, String nuevo){
+        DPuestos.modificar(buscador, nuevo);
+    }
+    public String consultaDPuesto(String nombrePlaca){
+        return DPuestos.consulta(nombrePlaca);
+    }
 }
 
