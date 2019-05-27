@@ -1,0 +1,57 @@
+package FacadeSinglenton;
+
+public class Reserva {
+    String Id;
+    String Nombre;
+    String Fecha;
+    String Concepto;
+    String Lugar;
+
+    public Reserva(String Nombre, String id) {
+        this.Nombre = Nombre;
+        this.Id = id;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public void setId(String Id) {
+        this.Id = Id;
+    }
+
+    public String getNombre() {
+        return Nombre;
+    }
+
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
+    public String getFecha() {
+        return Fecha;
+    }
+
+    public void setFecha(String Fecha) {
+        this.Fecha = Fecha;
+    }
+
+    public String getConcepto() {
+        return Concepto;
+    }
+
+    public void setConcepto(String Concepto) {
+        this.Concepto = Concepto;
+    }
+
+    public String getLugar() {
+        return Lugar;
+    }
+
+    public void setLugar(String Lugar) {
+        this.Lugar = Lugar;
+    }
+
+
+
+}
