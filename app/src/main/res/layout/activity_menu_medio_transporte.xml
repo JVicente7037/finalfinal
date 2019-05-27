@@ -7,4 +7,151 @@
     android:background="@drawable/transporte"
     tools:context=".MenuMedioTransporte">
 
+    <ImageView
+        android:id="@+id/imageViewa"
+        android:layout_width="253dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textPago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Menú Medios de Transporte"
+        android:textColor="#D500F9"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewa" />
+
+    <Button
+        android:id="@+id/buttona"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#7B1FA2"
+        android:text="Crear Medio Transporte"
+        android:textColor="#F7FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPago" />
+
+    <Button
+        android:id="@+id/buttons"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#512DA8"
+        android:text="Crear Grupo Medio Transporte"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toEndOf="@+id/buttona"
+        app:layout_constraintTop_toBottomOf="@+id/textPago" />
+
+    <Button
+        android:id="@+id/buttond"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#303F9F"
+        android:text="Consultar Medio Transporte"
+        android:textColor="#FAFFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttona" />
+
+    <Button
+        android:id="@+id/buttonb"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#1976D2"
+        android:text="Modificar Medio Transporte "
+        android:textColor="#F7FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/buttond"
+        app:layout_constraintTop_toBottomOf="@+id/buttons" />
+
+    <Button
+        android:id="@+id/buttonv"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FF5252"
+        android:text="Eliminar Medio Transporte Individual"
+        android:textColor="#F8FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonf"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonf"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:background="#40C4FF"
+        android:text="Modificar Medio Transporte Individual"
+        android:textColor="#F7FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttond" />
+
+    <Button
+        android:id="@+id/buttong"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#7C4DFF"
+        android:text="Eliminar Medio Transporte"
+        android:textColor="#F8FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/buttonf"
+        app:layout_constraintTop_toBottomOf="@+id/buttonb" />
+
+    <Button
+        android:id="@+id/buttonh"
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#536DFE"
+        android:text="Volver al Menú anterior"
+        android:textColor="#F8FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toEndOf="@+id/buttonv"
+        app:layout_constraintTop_toBottomOf="@+id/buttong"
+        app:layout_constraintVertical_bias="0.072" />
 </android.support.constraint.ConstraintLayout>

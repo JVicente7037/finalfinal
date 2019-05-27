@@ -7,4 +7,6 @@
     android:background="@drawable/transporte"
     tools:context=".RegistroMedioTransporte">
 
+
+
 </android.support.constraint.ConstraintLayout>
