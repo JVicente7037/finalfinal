@@ -8,44 +8,22 @@
     tools:context=".Register">
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:background="#03F44336"
-        android:shadowColor="#05F44336"
-        android:text="Transportes S.A"
-        android:textColor="#4CAF50"
-        android:textSize="36sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:text="Registro"
         android:textColor="#009688"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/correo"
         android:layout_width="331dp"
         android:layout_height="48dp"
         android:layout_marginStart="44dp"
@@ -54,8 +32,8 @@
         android:background="#12FFFFFF"
         android:drawableLeft="@drawable/user"
         android:ems="10"
+        android:hint="correo"
         android:inputType="textPersonName"
-        android:text="correo"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="18sp"
         android:visibility="visible"
@@ -63,7 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/contracena"
         android:layout_width="331dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -77,10 +55,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/contrasena2"
         android:layout_width="331dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -95,22 +73,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/contracena" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="331dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+        app:layout_constraintTop_toBottomOf="@+id/contrasena2" />
 
     <android.support.v7.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
+        android:id="@+id/registro"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="32dp"
@@ -138,7 +116,7 @@
     </android.support.v7.widget.CardView>
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -149,11 +127,25 @@
         android:layout_marginBottom="8dp"
         android:text="Inicia Sesión Aquí"
         android:textColor="#F44336"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+        app:layout_constraintTop_toBottomOf="@+id/registro" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="239dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
 </android.support.constraint.ConstraintLayout>
