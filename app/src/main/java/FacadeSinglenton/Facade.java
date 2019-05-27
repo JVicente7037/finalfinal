@@ -111,4 +111,12 @@ public class Facade {
         compositeReunion.modificar(buscador,nuevo);
     }
 
+    public String consultaTransporte(String n){
+        return hojaTransporte.consulta(n);
+    }
+    public void modificarTransporte(String busca,String nuevo){
+        hojaTransporte.modificar(busca, nuevo);
+    }
+
 }
+
