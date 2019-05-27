@@ -7,6 +7,9 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import Heroku.Herokuservice;
+
+import retrofit2.Retrofit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Retrofit retrofit = new Retrofit.Builder().baseUrl("http//glacial-brushlands-64415.herokuapp.com/").build();
+        final Herokuservice service = retrofit.create(Herokuservice.class);
         final EditText correo = (EditText) findViewById(R.id.correo);
         final EditText contrasena = (EditText) findViewById(R.id.contrasena);
         final TextView registrolink= (TextView) findViewById(R.id.registro);
@@ -28,4 +32,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 }

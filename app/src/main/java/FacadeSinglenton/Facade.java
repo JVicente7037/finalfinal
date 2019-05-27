@@ -140,5 +140,6 @@ public class Facade {
     public String consultaDPuesto(String nombrePlaca){
         return DPuestos.consulta(nombrePlaca);
     }
+
 }
 
