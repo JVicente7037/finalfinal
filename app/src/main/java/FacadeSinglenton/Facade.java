@@ -3,6 +3,7 @@ package FacadeSinglenton;
 import java.util.ArrayList;
 
 import Adapter.Usuario;
+import Composite.Component;
 import Composite.ReunionGrupos;
 import Composite.Transporte;
 
@@ -97,5 +98,17 @@ public class Facade {
         return P1.LeerTodoPago();
     }
 
+    public String consultaReunionGrupos(String nombre){
+        return compositeReunion.consulta(nombre);
+    }
+    public void addRGrupos(Component a){
+        compositeReunion.add(a);
+    }
+    public void deleteRGrupos(Component d){
+        compositeReunion.delete(d);
+    }
+    public void modificarRGrupos(String buscador, String nuevo){
+        compositeReunion.modificar(buscador,nuevo);
+    }
 
 }
