@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".MenuConductor"></activity>
+        <activity android:name=".GrupoTransporte" />
+        <activity android:name=".MenuAdministrador" />
+        <activity android:name=".MenuMedioTransporte" />
+        <activity android:name=".Pago" />
+        <activity android:name=".Reserva" />
+        <activity android:name=".MenuPagos" />
+        <activity android:name=".MenuReservas" />
+        <activity android:name=".VistaDecorator" />
+        <activity android:name=".RegistroMedioTransporte" />
+        <activity android:name=".Menu" />
+        <activity android:name=".Register" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
